@@ -1,0 +1,21 @@
+{
+  "name": "trabalho-pos",
+  "version": "1.0.0",
+  "description": "Trabalho Final Disciplina Programação para Automação de Testes",
+  "main": "trabalho.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LjonesQA/Trabalho-pos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LjonesQA/Trabalho-pos/issues"
+  },
+  "homepage": "https://github.com/LjonesQA/Trabalho-pos#readme"
+}
