@@ -5,7 +5,7 @@
   "main": "trabalho.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "test": "mocha teste/*.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/LjonesQA/Trabalho-pos/issues"
   },
-  "homepage": "https://github.com/LjonesQA/Trabalho-pos#readme"
+  "homepage": "https://github.com/LjonesQA/Trabalho-pos#readme",
+  "devDependencies": {
+    "mocha": "^11.4.0"
+  }
 }
