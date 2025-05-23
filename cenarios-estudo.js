@@ -6,7 +6,7 @@ import {
   calcularConsumoDeRacao,
   decidirTipoDeAtividadePorPorte,
   buscarDadoAsync
-} from '../trabalho.js';
+} from './trabalho.js';
 
 describe('cenarios extras associados ao trabalho final - fundamentos JS', () => {
   
