@@ -31,7 +31,7 @@ describe('cenarios extras associados ao trabalho final - fundamentos JS', () => 
   });
 
   it('QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona', async () => {
-    const resultado = await buscarDadoAsync();
+    const resultado = await buscarDadoAsync('Jack');
     assert.strictEqual(resultado, 'Pipoca');
   });
 
