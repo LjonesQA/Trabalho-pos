@@ -1,6 +1,7 @@
 function geradorDeTagsDeIdentificacao(nome) {
   return nome.toUpperCase()
 }
+
 function verificarSePodeSerAdotado(idade, tamanho ){
   if (idade>=1) {
     return (tamanho === "M"|| tamanho ==="G" )? true
@@ -10,16 +11,15 @@ function verificarSePodeSerAdotado(idade, tamanho ){
   }
   
 }
+
 function calcularConsumoDeRacao(nome,idade, peso) {
   let  idadeCachorro = idade + " anos"
   let consumoDiario = peso*300
   //cheguei nesse valor de 300 atarvés da divisão de 4350 por 14.5
   return consumoDiario 
-    
-
-  
   
 }
+
 function decidirTipoDeAtividadePorPorte(porte) {
   let lugar
   switch (porte) {
@@ -34,8 +34,9 @@ function decidirTipoDeAtividadePorPorte(porte) {
   }
    return `brincar ${lugar}`
 }
-function buscarDadoAsync(params) {
-  
+
+async function buscarDadoAsync(params) {
+  return "Pipoca"
 }
 
 export{
