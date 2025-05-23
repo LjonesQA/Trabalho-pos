@@ -6,7 +6,7 @@ import {
   calcularConsumoDeRacao,
   decidirTipoDeAtividadePorPorte,
   buscarDadoAsync
-} from './trabalho.js';
+} from '../trabalho.js';
 
 describe('cenarios extras associados ao trabalho final - fundamentos JS', () => {
   
@@ -14,19 +14,19 @@ describe('cenarios extras associados ao trabalho final - fundamentos JS', () => 
     assert.strictEqual(geradorDeTagsDeIdentificacao('JACK 3º'), 'JACK 3º');
   });
 
-  it('QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção', () => {
+  it('QUANDO a idade = 1 + porte P, DEVE ser permitida a adoção', () => {
     assert.strictEqual(verificarSePodeSerAdotado(1, 'P'), 'Tamanho não permitido pra adoção')
   })
 
-  it('QUANDO a idade = 1 + porte M, DEVE ser permitida a adoção', () => {
+  it('QUANDO a idade = 0 + porte M,NÃO DEVE ser permitida a adoção', () => {
     assert.strictEqual(verificarSePodeSerAdotado(0, 'M'), 'Infelizmente a idade de adoção tem que ser no minimo maior 1 ano')
   })
 
-  it('QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário', () => {
+  it('QUANDO o peso = 7, DEVE ser retornado 2100 gramas para o consumo diário', () => {
     assert.strictEqual(calcularConsumoDeRacao('Pitoco', 1, 7), 2100)
   });
 
-  it('QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada', () => {
+  it('QUANDO o porte = grande, DEVE ser retornada a atividade adequada', () => {
     assert.strictEqual(decidirTipoDeAtividadePorPorte('grande'), 'brincar no parque')
   });
 
