@@ -1,14 +1,22 @@
-name: Pipeline Manual
+name: Avaliacao pos
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
+  e2e_tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
-
-      - name: Rodar script de exemplo
-        run: echo "Pipeline executada manualmente!"
+      - name: node-version
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - name: Instalar yarn
+        run: npm install -g yarn
+      - name: Instalar dependências
+        run: yarn install
+      - name: Rodar testes E2E
+        run: npm run test
+ 
