@@ -1,0 +1,14 @@
+name: Pipeline Manual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Rodar script de exemplo
+        run: echo "Pipeline executada manualmente!"
